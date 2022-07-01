@@ -37,6 +37,7 @@ let () =
     for i = 0 to b do
       lista := ( ((Z.of_int 6 * Z.of_int i - Z.of_int 3) * (List.nth !lista 0)) - ((Z.of_int i - Z.of_int 2) * (List.nth !lista 1) ) ) / (Z.of_int i + Z.of_int 1) :: !lista;
     done;
+    (* ((6*i-3) * (S0) - (i-2) * (S1)) / (i+1) *)
 
 
 
